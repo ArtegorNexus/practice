@@ -79,8 +79,10 @@ body {
   background: #332D2E;
   margin: 0 -10px;
   padding: 0 10px;
+  color: white;
 }
 
+/*---------ТЕХНИЧЕСКИЕ И ОБЩИЕ КЛАССЫ---------*/
 ._container {
   padding: 0 211px;
   max-width: 1920px;
@@ -117,6 +119,13 @@ body {
   }
 }
 
+.title {
+  font-size: 50px;
+  line-height: 113.6%;
+  text-align: center;
+}
+
+/*------------HEADER-------------*/
 .header {
   height: 1080px;
 }
@@ -391,4 +400,62 @@ body {
 }
 .gallery__arrow {
   margin-right: 20px;
+}
+
+.recent {
+  padding-top: 77px;
+  padding-bottom: 163px;
+}
+.recent__title {
+  margin-bottom: 83px;
+}
+.recent__block:not(:last-child) {
+  margin-bottom: 83px;
+}
+
+.block-recent {
+  background: #2D2627;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.block-recent__image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 663px;
+          flex: 0 0 663px;
+}
+.block-recent__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin: 37px 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.block-recent__text {
+  font-size: 28px;
+  line-height: 113.6%;
+}
+.block-recent__text p:not(:last-child) {
+  margin-bottom: 7px;
+}
+.block-recent__button {
+  font-size: 34px;
+  line-height: 113.6%;
+  padding: 19px 69px;
+  border: 2px solid #767373;
+  border-radius: 39px;
+  max-width: 278px;
+  text-align: center;
+}
+.block-recent__button a {
+  color: #767373;
 }

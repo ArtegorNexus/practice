@@ -6,7 +6,10 @@ body {
 	background: #332D2E;
 	margin: 0 -10px;
 	padding: 0 10px;
+	color: white;
 }
+
+/*---------ТЕХНИЧЕСКИЕ И ОБЩИЕ КЛАССЫ---------*/
 
 ._container {
 	padding: 0 211px;
@@ -32,7 +35,18 @@ body {
 	}
 }
 
+.content {
+	&__gallery {}
+	&__recent {}
+}
 
+.title {
+	font-size: 50px;
+	line-height: 113.6%;
+	text-align: center;
+}
+
+/*------------HEADER-------------*/
 
 .header {
 	height: 1080px;
@@ -205,9 +219,7 @@ body {
 		}
 	}
 }
-.content {
-	&__gallery {}
-}
+
 .gallery {
 	margin-top: -164px;
 	background: #574646;
@@ -263,4 +275,64 @@ body {
 
 
 
+.content {
+	&__recent {}
+}
+.recent {
+	padding-top: 77px;
+	padding-bottom: 163px;
+	&__container {}
+	&__body {
 
+	}
+	&__title {
+		margin-bottom: 83px;
+	}
+	&__blocks {
+	}
+	&__block {
+		&:not(:last-child) {
+			margin-bottom: 83px;
+		}
+	}
+}
+
+.block-recent {
+	background: #2D2627;
+	display: flex;
+	&__image {
+		flex: 0 0 663px;
+		img {
+			
+		}
+	}
+	&__content {
+		flex: 1 1 auto;
+		margin: 37px 55px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	&__text {
+		font-size: 28px;
+		line-height: 113.6%;
+		p {
+			&:not(:last-child) {
+				margin-bottom: 7px;
+			}
+		}
+	}
+	&__button {
+		font-size: 34px;
+		line-height: 113.6%;
+		padding: 19px 69px;
+		border: 2px solid #767373;
+		border-radius: 39px;
+		max-width: 278px;
+		text-align: center;
+		a {
+			color: #767373;
+			
+		}
+	}
+}
